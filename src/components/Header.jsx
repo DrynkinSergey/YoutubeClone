@@ -3,7 +3,7 @@ import { SignBtn } from './SignBtn'
 
 export const Header = () => {
 	return (
-		<header className='flex'>
+		<header className='flex  sticky top-0 bg-white opacity-95'>
 			<div className='flex align-center   w-1/4 pl-4'>
 				<button className='pl-2 pr-6'>
 					<svg
@@ -50,7 +50,7 @@ export const Header = () => {
 			<div className='p-2.5 flex items-center   w-1/2'>
 				<div className='flex w-full h-full'>
 					<input
-						placeholder='Search'
+						placeholder='Введите запрос'
 						type='text'
 						className='w-full px-3 shadow-inner rounded-tl-sm rounded-bl-sm border border-gray-300 focus:outline-none focus:border-blue-700'
 					/>
@@ -90,7 +90,6 @@ export const Header = () => {
 			</div>
 			<div className='py-2 px-4 flex items-center justify-end  w-1/4 space-x-5'>
 				<button>
-					{' '}
 					<svg
 						className='w-5 h-5'
 						fill='none'
@@ -122,7 +121,7 @@ export const Header = () => {
 						></path>
 					</svg>
 				</button>
-				{/* <SignBtn /> */}
+				<SignBtn />
 			</div>
 		</header>
 	)
