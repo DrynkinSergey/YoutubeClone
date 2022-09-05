@@ -11,7 +11,7 @@ export const Navigation = () => {
 		'Последние опубликованные',
 	]
 	return (
-		<nav className=' z-90  whitespace-nowrap overflow-auto   sticky w-full   justify-center  flex items-center '>
+		<nav className=' z-90 md:md:pl-32 xl:pl-64  whitespace-nowrap overflow-auto   sticky w-full   justify-center  flex items-center '>
 			<ul className='flex text-sm py-2 w-full  justify-center gap-2 border-t border-b bg-white'>
 				{items.map((item, index) => (
 					<li

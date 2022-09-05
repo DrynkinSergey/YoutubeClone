@@ -7,7 +7,7 @@ import { Navigation } from './components/Nav'
 
 function App() {
 	return (
-		<div className='  text-gray-600'>
+		<div className=' bg-gray-100 text-gray-600'>
 			<Header />
 			<Aside />
 			<Navigation />

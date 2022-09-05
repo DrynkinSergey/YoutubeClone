@@ -3,7 +3,7 @@ import React from 'react'
 export const MainContent = () => {
 	const items = [
 		{
-			imgSrc: 'https://picsum.photos/id/7/356/200',
+			imgSrc: 'https://picsum.photos/id/7/720/400',
 			imgChanel:
 				'https://yt3.ggpht.com/fR2SqzMp59Pfm9AU6giI3pk6YzhxV8lvB6T9TELvEFVx8Mrlazbg1w62NzmeAiyrWh-WfSL_=s68-c-k-c0x00ffffff-no-rj',
 
@@ -213,14 +213,14 @@ export const MainContent = () => {
 		},
 	]
 	return (
-		<section className='relative z-10 main  pt-10  ml-64 '>
-			<ul className='grid  grid-cols-4 gap-5 px-20  pt-5 bg-gray-100'>
+		<section className='relative  z-10    pt-10    '>
+			<ul className='   pt-5 grid   gap-4 sm:px-25 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 md:pl-32 px-20  xl:pl-64'>
 				{items.map((item, index) => (
 					<li key={index}>
-						<div className='w-full flex  flex-col group hover:cursor-pointer'>
+						<div className=' w-full flex  flex-col group hover:cursor-pointer'>
 							<div className='relative'>
 								<img
-									src={`https://picsum.photos/id/${index + 20 * 3}/356/200`}
+									src={`https://picsum.photos/id/${index + 20 * 3}/720/400`}
 									alt=''
 								/>
 								<span className=' opacity-0 group-hover:opacity-100 bg-opacity-60 absolute p-1 top-2 right-0 mr-1  bg-black text-white rounded-sm'>
@@ -264,7 +264,7 @@ export const MainContent = () => {
 							<div className='flex gap-3 py-2'>
 								<img
 									className='w-[36px] h-[36px] rounded-full'
-									src={`https://picsum.photos/id/${index + 4 * 3}/356/200`}
+									src={`https://picsum.photos/id/${index + 4 * 3}/720/400`}
 									alt=''
 								/>
 								<div className='flex flex-col'>
