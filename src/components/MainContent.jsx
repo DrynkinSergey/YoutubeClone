@@ -3,8 +3,7 @@ import React from 'react'
 export const MainContent = () => {
 	const items = [
 		{
-			imgSrc:
-				'https://i.ytimg.com/vi/6HTsAT4fCoc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB1CWqJaK5hNb6ac1y4ZrHiPbILHQ',
+			imgSrc: 'https://picsum.photos/id/7/356/200',
 			imgChanel:
 				'https://yt3.ggpht.com/fR2SqzMp59Pfm9AU6giI3pk6YzhxV8lvB6T9TELvEFVx8Mrlazbg1w62NzmeAiyrWh-WfSL_=s68-c-k-c0x00ffffff-no-rj',
 
@@ -214,16 +213,58 @@ export const MainContent = () => {
 		},
 	]
 	return (
-		<section className='relative z-0 main  pt-10  ml-64 '>
+		<section className='relative z-10 main  pt-10  ml-64 '>
 			<ul className='grid  grid-cols-4 gap-5 px-20  pt-5 bg-gray-100'>
 				{items.map((item, index) => (
 					<li key={index}>
-						<div className='w-full flex flex-col '>
-							<img src={item.imgSrc} alt='' />
+						<div className='w-full flex  flex-col group hover:cursor-pointer'>
+							<div className='relative'>
+								<img
+									src={`https://picsum.photos/id/${index + 20 * 3}/356/200`}
+									alt=''
+								/>
+								<span className=' opacity-0 group-hover:opacity-100 bg-opacity-60 absolute p-1 top-2 right-0 mr-1  bg-black text-white rounded-sm'>
+									{/*time*/}
+									<svg
+										className='w-5 h-5'
+										fill='none'
+										stroke='currentColor'
+										viewBox='0 0 24 24'
+										xmlns='http://www.w3.org/2000/svg'
+									>
+										<path
+											stroke-linecap='round'
+											stroke-linejoin='round'
+											stroke-width='2'
+											d='M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z'
+										></path>
+									</svg>
+								</span>
+								<span className='absolute opacity-0 group-hover:opacity-100 bg-opacity-60 p-1 top-10 right-0 mr-1   bg-black text-white rounded-sm'>
+									<svg
+										className='w-5 h-5'
+										fill='none'
+										stroke='currentColor'
+										viewBox='0 0 24 24'
+										xmlns='http://www.w3.org/2000/svg'
+									>
+										<path
+											stroke-linecap='round'
+											stroke-linejoin='round'
+											stroke-width='2'
+											d='M4 6h16M4 12h16M4 18h7'
+										></path>
+									</svg>
+								</span>
+								<span className='opacity-100 group-hover:opacity-0 duration-500 bg-opacity-60 absolute text-xs p-1 semi-bold bottom-1 right-0 mr-1  bg-black text-white rounded-sm'>
+									6:34
+								</span>
+							</div>
+
 							<div className='flex gap-3 py-2'>
 								<img
-									className='w-[36px] h-[36px]'
-									src={item.imgChanel}
+									className='w-[36px] h-[36px] rounded-full'
+									src={`https://picsum.photos/id/${index + 4 * 3}/356/200`}
 									alt=''
 								/>
 								<div className='flex flex-col'>

@@ -3,7 +3,7 @@ import { SignBtn } from './SignBtn'
 
 export const Header = () => {
 	return (
-		<header className='flex  sticky top-0 bg-white opacity-95'>
+		<header className='flex z-50 sticky top-0 bg-white opacity-95'>
 			<div className='flex align-center   w-1/4 pl-4'>
 				<button className='pl-2 pr-6'>
 					<svg
@@ -59,13 +59,13 @@ export const Header = () => {
 							xmlns='http://www.w3.org/2000/svg'
 							fill='none'
 							viewBox='0 0 24 24'
-							stroke-width='1.5'
+							strokeWidth='1.5'
 							stroke='currentColor'
 							className='w-5 h-5'
 						>
 							<path
-								stroke-linecap='round'
-								stroke-linejoin='round'
+								strokeLinecap='round'
+								strokeLinejoin='round'
 								d='M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z'
 							/>
 						</svg>
@@ -76,13 +76,13 @@ export const Header = () => {
 						xmlns='http://www.w3.org/2000/svg'
 						fill='none'
 						viewBox='0 0 24 24'
-						stroke-width='1.5'
+						strokeWidth='1.5'
 						stroke='currentColor'
 						className='w-5 h-6'
 					>
 						<path
-							stroke-linecap='round'
-							stroke-linejoin='round'
+							strokeLinecap='round'
+							strokeLinejoin='round'
 							d='M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z'
 						/>
 					</svg>
@@ -98,9 +98,9 @@ export const Header = () => {
 						xmlns='http://www.w3.org/2000/svg'
 					>
 						<path
-							stroke-linecap='round'
-							stroke-linejoin='round'
-							stroke-width='2'
+							strokeLinecap='round'
+							strokeLinejoin='round'
+							strokeWidth='2'
 							d='M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z'
 						></path>
 					</svg>
@@ -114,9 +114,9 @@ export const Header = () => {
 						xmlns='http://www.w3.org/2000/svg'
 					>
 						<path
-							stroke-linecap='round'
-							stroke-linejoin='round'
-							stroke-width='2'
+							strokeLinecap='round'
+							strokeLinejoin='round'
+							strokeWidth='2'
 							d='M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z'
 						></path>
 					</svg>
