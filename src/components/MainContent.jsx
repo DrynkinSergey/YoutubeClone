@@ -214,7 +214,7 @@ export const MainContent = () => {
 	]
 	return (
 		<section className='relative  z-10    pt-10    '>
-			<ul className='   pt-5 grid   gap-4 sm:px-25 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 md:pl-32 px-20  xl:pl-64'>
+			<ul className=' grid  gap-3 sm:px-10 sm:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 md:pl-32 px-10  xl:pl-64'>
 				{items.map((item, index) => (
 					<li key={index}>
 						<div className=' w-full flex  flex-col group hover:cursor-pointer'>
@@ -233,9 +233,9 @@ export const MainContent = () => {
 										xmlns='http://www.w3.org/2000/svg'
 									>
 										<path
-											stroke-linecap='round'
-											stroke-linejoin='round'
-											stroke-width='2'
+											strokeLinecap='round'
+											strokeLinejoin='round'
+											strokeWidth='2'
 											d='M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z'
 										></path>
 									</svg>
@@ -249,9 +249,9 @@ export const MainContent = () => {
 										xmlns='http://www.w3.org/2000/svg'
 									>
 										<path
-											stroke-linecap='round'
-											stroke-linejoin='round'
-											stroke-width='2'
+											strokeLinecap='round'
+											strokeLinejoin='round'
+											strokeWidth='2'
 											d='M4 6h16M4 12h16M4 18h7'
 										></path>
 									</svg>
@@ -267,7 +267,7 @@ export const MainContent = () => {
 									src={`https://picsum.photos/id/${index + 4 * 3}/720/400`}
 									alt=''
 								/>
-								<div className='flex flex-col'>
+								<div className='flex flex-col max-w-[80%]'>
 									<span className='text-xl '>{item.title}</span>
 									<span>{item.chanel}</span>
 									<span className='text-s'>{item.time}</span>

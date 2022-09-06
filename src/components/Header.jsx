@@ -3,16 +3,16 @@ import { SignBtn } from './SignBtn'
 
 export const Header = () => {
 	return (
-		<header className='flex z-50 sticky top-0 bg-white opacity-95'>
-			<div className='flex align-center   w-1/4 pl-4'>
-				<button className='pl-2 pr-6'>
+		<header className='flex z-50 sm:justify-between  sticky top-0 bg-white '>
+			<div className='flex align-center   w-1/2 pl-4'>
+				<button className='pl-2 pr-6 md:pl-8 md:pr-12 lg:pr-6'>
 					<svg
 						xmlns='http://www.w3.org/2000/svg'
 						fill='none'
 						viewBox='0 0 24 24'
 						strokeWidth={1.5}
 						stroke='currentColor'
-						className='w-6 h-6'
+						className='w-6 h-6 md:w-8 md:h-8'
 					>
 						<path
 							strokeLinecap='round'
@@ -47,12 +47,12 @@ export const Header = () => {
 					</g>
 				</svg>
 			</div>
-			<div className='p-2.5 flex items-center   w-1/2'>
-				<div className='flex w-full h-full'>
+			<div className='p-2.5 flex  justify-center  w-1/2 '>
+				<div className=' hidden md:flex lg:w-full h-full   '>
 					<input
 						placeholder='Введите запрос'
 						type='text'
-						className='w-full px-3 shadow-inner rounded-tl-sm rounded-bl-sm border border-gray-300 focus:outline-none focus:border-blue-700'
+						className='w-full  px-3 shadow-inner rounded-tl-sm rounded-bl-sm border border-gray-300 focus:outline-none focus:border-blue-700'
 					/>
 					<button className='flex items-center px-6 py-1 text-gray-500 bg-gray-100 border border-l-0 border-gray-300 rounded-tr-sm rounded rounded-br-sm hover:bg-gray-200'>
 						<svg
@@ -71,7 +71,7 @@ export const Header = () => {
 						</svg>
 					</button>
 				</div>
-				<button className='ml-4'>
+				<button className=' ml-4 hidden md:block'>
 					<svg
 						xmlns='http://www.w3.org/2000/svg'
 						fill='none'

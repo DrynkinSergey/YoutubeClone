@@ -129,7 +129,7 @@ export const Aside = () => {
 					</ul>
 				</section>
 			</aside>
-			<aside className='hidden xl:block z-40 w-64 border-r border-gray-100 max-h-screen overflow-auto  fixed left-0'>
+			<aside className='hidden xl:block z-40 w-64 border-r border-gray-100 max-h-screen bg-white overflow-auto  fixed left-0'>
 				<section className='py-2 border-b'>
 					<ul>
 						<AsideItem title='Главная' active>
